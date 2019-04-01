@@ -1,0 +1,31 @@
+.social-panel{
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+  position: fixed;
+  left: 10px;
+  top: 45%;
+
+  font-size: 20px;
+
+  &.show {
+    display: flex;
+    animation: fadein .7s;
+  }
+
+  a {
+    color: black;
+    transition: all .2s;
+
+    &:hover {
+      color: gray;
+    }
+  }
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}

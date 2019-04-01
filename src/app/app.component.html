@@ -1,0 +1,56 @@
+
+<div class="loader" *ngIf="isLoading">
+  <div class="loader-background"></div>
+  <div class="square" ></div>
+  <div class="square"></div>
+  <div class="square last"></div>
+  <div class="square clear"></div>
+  <div class="square"></div>
+  <div class="square last"></div>
+  <div class="square clear"></div>
+  <div class="square "></div>
+  <div class="square last"></div>
+</div>
+
+<div class="head" [ngClass]="scrolled ? 'fixed' : ''">
+  <a routerLink="/">
+    <img class="head__logo"  src="http://www.mulu.cz/wp-content/uploads/2018/04/Bez-n†zvu-2.png">
+  </a>
+  <div class="head__menu">
+    <a class="head__link hover-1" routerLink="blog" [routerLinkActive]="['active']" [translate]="'blog'"></a>
+    <a class="head__link hover-1" *ngFor="let page of pages" [routerLink]="page.slug"
+       [routerLinkActive]="['active']" [translate]="page.title.rendered"> </a>
+  </div>
+  <div routerLink="/kontakt" class="head-social">
+    <div class="head-social__item" [translate]="'Kontakt'">
+    </div>
+    <div class="head-social__show" [translate]="'contact-me'">
+    </div>
+  </div>
+
+ <!-- <a (click)="changeLang()" class="head-social">
+    <div class="head-social__item" [translate]="'lang-switch'">
+    </div>
+    <div class="head-social__show" [translate]="'lang-switch-descript'">
+    </div>
+  </a> -->
+</div>
+
+  <app-social-panel></app-social-panel>
+  <router-outlet></router-outlet>
+
+<!--<app-instagram-feed></app-instagram-feed>-->
+<ngx-slick-carousel class="carousel"
+                    #slickModal="slick-carousel"
+                    [config]="slideConfig">
+  <div ngxSlickItem *ngFor="let slide of configs" class="slide">
+    <a href="{{slide.link}}" rel="noopener" alt="instagram" >
+      <img alt="instagram" src="{{ slide.images.standard_resolution.url }}" width="100%">
+    </a>
+  </div>
+</ngx-slick-carousel>
+
+<div class="footer">
+  <span>© Lukáš Müller, {{currentYear}} | <i class="fab fa-angular"></i> {{currentVersionA}}</span>
+  <a href="mailto:muller.lukas@mulu.cz"> muller.lukas@mulu.cz </a>
+</div>

@@ -1,0 +1,52 @@
+.pagination
+  display: flex
+  flex-direction: row
+  justify-content: space-around
+
+  &__item
+    width: 25px
+    height: 25px
+    text-align: center
+    display: flex
+    align-items: center
+    justify-content: center
+    transition: all .2s
+
+    &:before
+      content: ''
+      position: absolute
+      border: 1px solid gray
+      transform: rotate(135deg)
+      width: 25px
+      height: 25px
+
+    &:hover,
+    &:focus
+      border-color: black
+
+  &__arrow
+    cursor: pointer
+    color: gray
+    transition: all .2s
+    letter-spacing: 2px
+
+    &--disabled
+      color: white
+      cursor: default
+      visibility: hidden
+
+    &:hover,
+    &:focus
+      color: black
+
+  &__button
+    letter-spacing: 2px
+    font-size: 15px
+    margin-top: 10px
+    cursor: pointer
+    color: gray
+    transition: all .2s
+
+    &:hover,
+    &:focus
+      color: black

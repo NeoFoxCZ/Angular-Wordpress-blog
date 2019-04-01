@@ -1,0 +1,11 @@
+  <div *ngIf="page" class="article-detail__frame">
+    <div class="article-detail__content">
+      <h1>{{ page.title.rendered }}</h1>
+      <div [innerHTML]="page.content.rendered"></div>
+    </div>
+  </div>
+  <div *ngIf="!page">
+    <div class="loading">
+      <div class="js-loading-indicator triple"></div>
+    </div>
+  </div>

@@ -1,18 +1,20 @@
-# [Global: HTML5 website template](http://buckymaler.com/global)
+OWN WEBSITE
 
-### [Featured on Freebiesbug](http://freebiesbug.com/psd-freebies/global-futuristic-one-page-portfolio-psd-html/)
+server: 
 
-Global is a modern and sleek website template crafted for professionals in the creative industry. Global can serve as a single page portfolio or be easily modified to serve as the perfect beginning for a hip creative agency.
+template-dist
+	-index.php
+	-functions.php
 
-The original PSD is included and was provided by [Sergey Melnik](https://www.behance.net/SergeyMelnik).
+set up custom permalink! :)
 
-This project was developed with HTML5, Sass, jQuery, and Hammer.js.
+/%postname%
 
-Performance basics are covered: assets are minified into single CSS and JS files, and the images are optimized.
 
-[LIVE PREVIEW](http://buckymaler.com/global)
+build cmd:
+ng build --prod --deploy-url="/wp-content/themes/test/dist/"
 
-## Misc:
+don´t forget on style.css in main folder of theme!! - resolve missing stylesheet problem.
 
-* Follow Bucky: [Twitter](https://twitter.com/BuckyMaler), [GitHub](https://github.com/BuckyMaler)
-* Follow Sergey: [Dribbble](https://dribbble.com/sergeymelnik), [Bēhance](https://www.behance.net/SergeyMelnik)
+
+After build when you need multilang -> and folder assets/i18n to root folder of wp. 

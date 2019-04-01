@@ -1,0 +1,96 @@
+.index
+ &__text
+   display: flex
+   flex-direction: column
+   justify-content: center
+   align-items: center
+
+ &__posts
+   width: calc(100% - 600px)
+   margin-left: 25px
+
+ &-panel
+  width: 300px
+  height: 70px
+  margin-right: 20px
+
+  &__item
+    display: flex
+    justify-content: center
+    margin: 10px auto
+    max-width: 200px
+    color: black
+    padding: 5px 0
+    cursor: pointer
+    transition: all .2s
+    border-radius: 4px
+    text-decoration: none
+
+    i
+      padding-right: 7px
+
+    &--linked
+      color: white
+      background-color: #0E76A8
+
+      &:hover
+        background-color: #085275
+
+    &--twitter
+      color: white
+      background-color: #4fa5eb
+
+      &:hover
+        background-color: #3c7db1
+
+    &--github
+      color: white
+      background-color: #25292d
+
+      &:hover
+          background-color: #6f7784
+
+  &__image
+    margin-top: 20px
+    max-width: 120px
+    border-radius: 50%
+
+  &__frame
+    display: flex
+    flex-direction: row
+    justify-content: center
+    text-align: center
+
+ &-contact
+   &__button
+     cursor: pointer
+
+   &__frame
+     background-color: white
+     width: calc(100% / 8)
+     border-bottom-left-radius: 5px
+     border-bottom-right-radius: 5px
+     border-color: black
+     color: black
+
+     min-height: 150px
+
+     font-size: 18px
+
+     &:hover
+       background-color: whitesmoke
+
+.index-paralax
+
+  background-image: url(https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+  //background-image: url(https://images.pexels.com/photos/1438404/pexels-photo-1438404.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)
+  //background-image: url(https://images.pexels.com/photos/301614/pexels-photo-301614.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)
+  background-attachment: fixed
+  background-position: center
+  background-repeat: no-repeat
+  height: 260px
+  background-size: cover
+  background-position-y: -400px
+  box-shadow: 0 0 3px 1px #000000
+  margin-top: -40px
+

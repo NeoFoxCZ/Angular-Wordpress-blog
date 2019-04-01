@@ -1,0 +1,42 @@
+<div class="content">
+  <div class="article__list">
+    <ng-container *ngIf="posts">
+        <div [routerLink]="stateIndex ? 'blog/' + post.slug : post.slug"
+             class="article__item" *ngFor="let post of posts" >
+          <div class="article__img" [style.backgroundImage]="'url(' + post?.better_featured_image?.media_details.sizes.medium.source_url + ')'">
+          </div>
+          <div class="article__category"> článek </div>
+          <div class="article__title"> {{ post?.title.rendered }} </div>
+          <div class="article__excerpt" [innerHTML]="post.excerpt.rendered"></div>
+        </div>
+    </ng-container>
+  </div>
+
+  <div class="pagination" *ngIf="posts">
+    <div class="pagination__arrow" (click)="previousPage()"
+         [ngClass]="{'pagination__arrow--disabled': this.currentPage <= 1}">
+      <i class="fas fa-angle-left"></i>
+      zpět
+    </div>
+
+    <div class="pagination__item">
+      {{currentPage}}
+    </div>
+
+    <div class="pagination__arrow" (click)="nextPage()"
+         [ngClass]="{'pagination__arrow--disabled': this.posts.length < this.maxPostsPerPage}">
+      další
+      <i class="fas fa-angle-right"></i>
+    </div>
+  </div>
+
+  <div routerLink="/blog" *ngIf="stateIndex" class="pagination__button">
+    Přejít na blog
+  </div>
+
+  <ng-container *ngIf="!posts">
+      <div class="loading">
+        <div class="js-loading-indicator triple"></div>
+      </div>
+  </ng-container>
+</div>
