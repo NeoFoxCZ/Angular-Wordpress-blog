@@ -32,6 +32,8 @@ Temporary Items
 config.codekit3
 /min
 
+### Git
+./node_modules
 
 ### Sass ###
 .sass-cache/
