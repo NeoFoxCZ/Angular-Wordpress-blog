@@ -13,7 +13,7 @@ import {AppService} from '../../app.service';
   selector: 'app-post-single',
   templateUrl: './post-single.component.html',
   styleUrls: ['./post-single.component.scss'],
-  encapsulation: ViewEncapsulation.Native,
+  encapsulation: ViewEncapsulation.ShadowDom,
   providers: [PostsService, AppService]
 })
 export class PostSingleComponent implements OnInit {

@@ -49,20 +49,35 @@
   }
 
   &__content {
-    max-width: 600px;
-    word-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
     padding-bottom: 50px;
     text-align: justify;
-    margin: auto;
+
+    p {
+      margin: 2px 0;
+    }
 
     code {
-      text-align: initial;
+      margin: 10px 0;
+      font-size: 12px;
+      line-height: 20px;
+      background-color: #f4f4f4;
+      border: 1px solid #d4d4d4;
+      border-radius: 3px;
+      padding: 10px 0 10px 10px;
       background-color: rgba(0,0,0,.05) !important;
       flex-wrap: wrap;
-      padding: 10px;
       width: 100%;
       display: flex;
-      white-space: normal;
+      white-space: normal !important;
+    }
+
+    pre {
+      code {
+        white-space: normal;
+      }
     }
   }
 }
