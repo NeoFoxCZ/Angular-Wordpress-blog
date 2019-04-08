@@ -3,7 +3,7 @@
     <ng-container *ngIf="posts">
         <div [routerLink]="stateIndex ? 'blog/' + post.slug : post.slug"
              class="article__item" *ngFor="let post of posts" >
-          <div class="article__img" [style.backgroundImage]="'url(' + post?.better_featured_image?.media_details.sizes.medium.source_url + ')'">
+          <div class="article__img" [style.backgroundImage]="'url(' + post?.better_featured_image?.media_details.sizes.medium_large.source_url + ')'">
           </div>
           <div class="article__category"> článek </div>
           <div class="article__title"> {{ post?.title.rendered }} </div>

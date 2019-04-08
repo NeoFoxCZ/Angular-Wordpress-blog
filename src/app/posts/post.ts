@@ -26,6 +26,10 @@ export class Post {
             file: string;
             source_url: string;
           },
+          medium_large: {
+            file: string;
+            source_url: string;
+          },
           large: {
             file: string;
             source_url: string;
