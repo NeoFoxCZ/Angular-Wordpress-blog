@@ -24,7 +24,7 @@ export class IndexComponent implements OnInit, AfterViewInit {
   currentLang: string;
 
   constructor( private postsService: PostsService, private router: Router,
-               private titleService: Title, private appService: AppService,
+               private titleService: Title, public appService: AppService,
                private http: HttpClient, private translate: TranslateService) { }
 
   ngOnInit() {

@@ -6,6 +6,7 @@ import { HttpErrorResponse } from '@angular/common/http';
 import { Title, Meta } from '@angular/platform-browser';
 import {AppService} from '../../app.service';
 import {TranslateService} from "@ngx-translate/core";
+import {Observable} from "rxjs/Rx";
 
 @Component({
   selector: 'app-post-list',
@@ -33,7 +34,6 @@ export class PostListComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.appService.setLoader(true);
     window.scrollTo(0, 0);
     this.translate.onLangChange.subscribe( (lang) => (this.getPosts()));
 

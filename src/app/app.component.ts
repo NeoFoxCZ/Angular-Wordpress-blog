@@ -8,6 +8,7 @@ import {InstagramData} from './instagram';
 import { VERSION } from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
 import {AppService} from './app.service';
+import {Observable, Subscription} from "rxjs/Rx";
 
 declare let ga: Function;
 
@@ -29,6 +30,8 @@ export class AppComponent implements OnInit {
   currentLang: string;
   isLoading: boolean;
 
+  isLoaderLoading: boolean;
+
   slideConfig = {
     'slidesToShow': 8, 'slidesToScroll': 2,
     'prevArrow': false, 'nextArrow': false,
@@ -38,14 +41,12 @@ export class AppComponent implements OnInit {
   constructor( private pagesService: PagesService, private router: Router,
                public googleAnalyticsEventsService: GoogleAnalyticsEventsService,
                private http: HttpClient, private translate: TranslateService,
-               public appService: AppService) {
+               private appService: AppService) {
 
     this.currentLang = localStorage.getItem('lang');
     if (!this.currentLang) { this.appService.setLang('cz'); } else {
       this.appService.setLang(this.currentLang);
     }
-
-
 
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
@@ -68,20 +69,19 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     window.scrollTo(0, 0);
-
-    //loaders
-    this.appService.getLoader().subscribe(value => this.isLoading = value);
-
     this.getInstagramFeed();
     this.getPages();
     this.subscribeloading();
+
+
   };
 
   getPages(lang?: string) : void {
     this.currentLang = localStorage.getItem('lang');
     this.pages = [];
+
     this.pagesService.getPages(this.currentLang === 'en' ? 'en' : 'cz').subscribe(
-      (pages: Page[]) => this.pages = pages,
+      (pages: Page[]) => (this.pages = pages),
       (err: HttpErrorResponse) => err.error instanceof Error ? console.log('An error occurred:',
         err.error.message) : console.log(`Backend returned code ${err.status}, body was: ${err.error}`));
   }
@@ -106,7 +106,6 @@ export class AppComponent implements OnInit {
 
     this.router.navigate(['/']);
   }
-
 }
 
 

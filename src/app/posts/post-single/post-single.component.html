@@ -10,6 +10,23 @@
           <div class="article-detail__date"> {{post.date | date: 'dd/MM/yyyy'}}</div>
           <div class="article-detail__content" [innerHTML]="post.content.rendered"></div>
           <div class="article-detail__arrow" [routerLink]="'/blog'"><</div>
+          <div class="article-detail__buttons">
+              <div class="article-detail__shareItem article-detail__shareItem--linkedIn">
+                  L
+                  <div class="article-detail__shareItem--text">inkedIn</div>
+              </div>
+              <div class="article-detail__shareItem  article-detail__shareItem--facebook" >
+                  F
+                  <div class="article-detail__shareItem--text">acebook</div>
+              </div>
+              <div class="article-detail__shareItem article-detail__shareItem--twitter">
+                  T
+                  <div class="article-detail__shareItem--text ">witter</div>
+              </div>
+              <div class="article-detail__text">
+                  SDÍLEJ
+              </div>
+          </div>
       </div>
     </ng-container>
 
