@@ -38,6 +38,25 @@
     }
   }
 
+  &__arrow {
+    position: absolute;
+    left: -35px;
+    font-size: 30px;
+    padding: 10px 20px;
+    top: 50%;
+    background-color: white;
+    border: 1px solid gray;
+    transition: all .2s;
+    cursor: pointer;
+    outline: none;
+
+    &:hover {
+      background-color: black;
+      color: white;
+    }
+
+  }
+
   &__title {
     z-index: 1;
     text-align: center;
