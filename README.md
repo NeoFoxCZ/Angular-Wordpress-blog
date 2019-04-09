@@ -14,6 +14,7 @@ functions.php
 
 ## Angular commands
 #### Create on Angular Live Development Server with watch
+
 ```
 ng serve
 ```

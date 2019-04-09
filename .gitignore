@@ -1,5 +1,6 @@
-# Git
+### Git ###
 idea/
+dist/
 node_modules/
 
 ### Sass ###
