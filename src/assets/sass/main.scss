@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  padding-top: 100px;
   height: 100vh;
 
   font-family: 'Raleway', sans-serif;
@@ -17,6 +16,58 @@ body {
 
   transition: all .3s;
 }
+
+
+.transition {
+
+  &:before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    z-index: 900;
+    background-color: rgba(0, 0, 0, 0.9);
+    animation: setIn .6s;
+  }
+
+  &:after {
+    content: '';
+    position: fixed;
+    z-index: 900;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: white;
+    animation: setOut .3s;
+  }
+}
+
+@keyframes setIn {
+  0% {
+    width: 100%;
+  }
+  40% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes setOut {
+  from {
+    width: 0;
+    display: block;
+  }
+  to {
+    width: 100%;
+    display: none;
+  }
+}
+
 
 .head {
   position: fixed;
@@ -147,14 +198,6 @@ body {
 }
 
 .index {
-  &__frame {
-    margin-top: -100px;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    flex-direction: row;
-  }
-
   &__posts {
 
     margin: 28px 0 0 20px;
@@ -165,10 +208,6 @@ body {
     max-width: 700px;
     width: 100%;
     height: 100%;
-  }
-
-  &__text {
-    background-color: red;
   }
 
   &__second {
@@ -225,7 +264,7 @@ body {
   -webkit-animation: spin 2s linear infinite;
   -moz-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
-  z-index: 1002;
+  z-index: 500;
   width: 100%;
   height: 100%;
 }

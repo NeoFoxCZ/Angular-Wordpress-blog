@@ -1,5 +1,5 @@
-
-    <ng-container *ngIf="post">
+<span class="transition"></span>
+<ng-container *ngIf="post">
       <div class="article-detail__imageFrame"
            [style.backgroundImage]="'url('+ post.better_featured_image?.media_details?.sizes?.large?.source_url +')'">
         <img src="{{post.better_featured_image?.media_details?.sizes?.medium?.source_url}}">

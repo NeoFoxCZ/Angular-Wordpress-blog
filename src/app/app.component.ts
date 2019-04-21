@@ -1,4 +1,4 @@
-import { Component, HostListener, OnInit} from '@angular/core';
+import {Component, HostListener, OnInit, ViewEncapsulation} from '@angular/core';
 import { Page } from './page/page';
 import { PagesService } from './page/pages.service';
 import {HttpClient, HttpErrorResponse} from '@angular/common/http';
@@ -16,6 +16,7 @@ declare let ga: Function;
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['../assets/sass/main.scss'],
+  encapsulation: ViewEncapsulation.None,
   providers: [PagesService]
 })
 
