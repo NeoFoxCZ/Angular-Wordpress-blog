@@ -15,8 +15,8 @@
     <img class="head__logo" src="http://www.mulu.cz/wp-content/uploads/2018/04/Bez-n†zvu-2.png">
   </a>
   <div class="head__menu">
-    <a class="head__link hover-1" routerLink="blog" [routerLinkActive]="['active']" [translate]="'blog'"></a>
-    <a class="head__link hover-1" *ngFor="let page of pages" [routerLink]="page.slug"
+    <a class="head__link" routerLink="blog" [routerLinkActive]="['active']" [translate]="'blog'"></a>
+    <a class="head__link" *ngFor="let page of pages" [routerLink]="page.slug"
        [routerLinkActive]="['active']" [translate]="page.title.rendered"> </a>
   </div>
   <div routerLink="/kontakt" class="head-social">

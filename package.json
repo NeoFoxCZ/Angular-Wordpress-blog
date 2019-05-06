@@ -4,7 +4,7 @@
   "license": "MIT",
   "angular-cli": {},
   "scripts": {
-    "build prod": "ng build --prod --deploy-url=\"/wp-content/themes/test/dist/\"",
+    "build_prod": "ng build --prod --deploy-url=\"/wp-content/themes/test/dist/\"",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
