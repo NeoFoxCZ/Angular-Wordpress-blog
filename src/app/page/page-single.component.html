@@ -4,8 +4,14 @@
       <div [innerHTML]="page.content.rendered"></div>
     </div>
   </div>
+
   <div *ngIf="!page">
-    <div class="loading">
-      <div class="js-loading-indicator triple"></div>
-    </div>
+      <div class="loader-wrapper">
+          <div class="loader">
+              <div class="ball"></div>
+              <div class="ball"></div>
+              <div class="ball"></div>
+          </div>
+          <div class="text">Načítám...</div>
+      </div>
   </div>
