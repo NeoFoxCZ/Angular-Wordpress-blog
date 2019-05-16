@@ -1,0 +1,19 @@
+<div class="header">
+    <div class="header__menu">
+    </div>
+    <div class="header__menu header__menu--right">
+         <a class="header__item" [routerLink]="'blog'" *ngIf="pages">
+            Blog
+         </a>
+         <a class="header__item" *ngFor="let page of pages" [routerLink]="page.slug"
+           [routerLinkActive]="['active']" [translate]="page.title.rendered">
+         </a>
+    </div>
+</div>
+
+<ng-template #menuloading>
+    <div class="header__item">
+        načítám
+    </div>
+</ng-template>
+

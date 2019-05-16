@@ -1,0 +1,33 @@
+$width-right: 45%
+$panel-color: #15141a
+
+.header
+  width: 100%
+  height: 60px
+  display: flex
+  flex-direction: row
+
+  &:before
+    content: ''
+    width: $width-right
+    height: 65%
+    background-color: $panel-color
+    right: 0
+    position: absolute
+    top: 0
+    z-index: -1
+
+  &__menu
+    display: flex
+    flex-direction: row
+    align-self: center
+    justify-content: flex-start
+    width: calc(100% - #{$width-right})
+
+    &--right
+      width: $width-right
+
+  &__item
+    padding: 0 20px
+    margin: 0 25px
+    color: white

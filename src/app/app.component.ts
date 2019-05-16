@@ -73,8 +73,6 @@ export class AppComponent implements OnInit {
     this.getInstagramFeed();
     this.getPages();
     this.subscribeloading();
-
-
   };
 
   getPages(lang?: string) : void {
