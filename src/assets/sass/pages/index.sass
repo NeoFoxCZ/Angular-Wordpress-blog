@@ -16,7 +16,7 @@
       top: 66px
 
   &__content
-    background-color: red
+    margin-top: 50px
     width: 100%
     display: flex
     flex-direction: column
@@ -35,3 +35,23 @@
       text-align: center
       background-color: blue
       transform: skewX(-13deg) skewY(0)
+
+.index-about
+  display: flex
+  flex-direction: column
+  width: 100%
+
+  h1
+    position: relative
+    &:before
+      position: absolute
+      content: ''
+
+      bottom: 20px
+      width: calc(100% - 150px)
+      left: 150px
+      height: 3px
+      background-color: black
+
+  &__text
+    padding-left: 150px
