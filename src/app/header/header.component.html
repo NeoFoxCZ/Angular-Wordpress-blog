@@ -3,11 +3,12 @@
     <div class="header__menu">
     </div>
     <div class="header__menu header__menu--right">
-         <a class="header__item" [routerLink]="'blog'" *ngIf="pages">
+         <a class="header__item" [routerLink]="'blog'" *ngIf="pages"
+            [routerLinkActive]="['header__item--active']">
             <span>Blog</span>
          </a>
          <a class="header__item" *ngFor="let page of pages" [routerLink]="page.slug"
-           [routerLinkActive]="['active']" >
+           [routerLinkActive]="['header__item--active']" >
              <span [translate]="page.title.rendered"></span>
          </a>
         <a class="header__item" [routerLink]="'blog'" *ngIf="pages">

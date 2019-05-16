@@ -46,6 +46,18 @@ $panel-color: #15141a
     //margin: 0 25px
     color: white
     position: relative
+    text-decoration: none
+
+    &--active
+      &:after
+        content: ''
+        width: 50%
+        top: 42px
+        height: 4px
+        background-color: white
+        position: absolute
+        left: 35%
+        animation: animation-show .2s
 
     &:last-child
       &:before
@@ -60,3 +72,9 @@ $panel-color: #15141a
 
     span
       transform: skewX(52deg) skewY(0)
+
+@keyframes animation-show
+  0%
+    width: 0
+  100%
+    width: 50%
