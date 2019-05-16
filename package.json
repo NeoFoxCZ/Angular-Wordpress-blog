@@ -38,6 +38,7 @@
     "gulp-cssmin": "^0.2.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^4.0.2",
+    "jquery": "^3.4.1",
     "momentjs": "^2.0.0",
     "ng-simple-slideshow": "^1.2.8",
     "ngx-slick-carousel": "^0.4.4",
@@ -46,6 +47,7 @@
     "rxjs": "^6.4.0",
     "rxjs-compat": "^6.4.0",
     "sass": "^1.17.3",
+    "slick-carousel": "^1.8.1",
     "zone.js": "^0.8.29"
   },
   "devDependencies": {

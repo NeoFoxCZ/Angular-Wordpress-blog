@@ -9,6 +9,21 @@
         </div>
     </div>
     <div class="index__content">
+        <ngx-slick-carousel class=""
+                            #slickModal="slick-carousel"
+                            [config]="slideConfig"
+                            (init)="slickInit($event)"
+                            (breakpoint)="breakpoint($event)"
+                            (afterChange)="afterChange($event)"
+                            (beforeChange)="beforeChange($event)">
+            <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+                <img src="{{ slide.img }}" alt="" width="100%">
+            </div>
+        </ngx-slick-carousel>
+
+        <div class="index-skills">
+            <div class="index-skills__item">test</div>
+        </div>
 
     </div>
 </div>

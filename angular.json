@@ -23,7 +23,9 @@
             ],
             "styles": [
               "src/bundle-main.css",
-              "src/slick.css"
+              "src/slick.css",
+              "node_modules/slick-carousel/slick/slick.scss",
+              "node_modules/slick-carousel/slick/slick-theme.scss"
             ],
             "scripts": [
               "src/jquery.min.js",

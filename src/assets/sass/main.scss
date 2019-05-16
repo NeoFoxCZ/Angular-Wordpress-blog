@@ -663,7 +663,14 @@ $topenter: -10px;
 
     i {
       font-size: 25px;
-      color: white;
+      color: rgba(255, 255, 255, 0.9);
+      transition: all .2s;
+      cursor: pointer;
+
+
+      &:hover {
+        color: white;
+      }
     }
   }
 
