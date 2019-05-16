@@ -25,7 +25,14 @@ $panel-color: #15141a
     width: calc(100% - #{$width-right})
 
     &--right
+      z-index: 5
+      background-color: $panel-color
+      position: fixed
+      right: 0
       width: $width-right
+      height: 60px
+      display: flex
+      align-items: center
 
   &__item
     padding: 0 20px
