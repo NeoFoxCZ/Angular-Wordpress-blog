@@ -47,6 +47,12 @@ $panel-color: #15141a
     color: white
     position: relative
     text-decoration: none
+    border-right: 1px solid black
+    border-left: 1px solid black
+    transition: all .1s
+
+    &:hover
+      background-color: gray
 
     &--active
       &:after
@@ -60,6 +66,16 @@ $panel-color: #15141a
         animation: animation-show .2s
 
     &:last-child
+      border-right: 0
+      border-left: 0
+      margin-left: -2px
+      transition: all .1s
+
+      &:hover
+        &:before
+          background-color: gray
+
+
       &:before
         content: ''
         position: absolute
@@ -68,7 +84,7 @@ $panel-color: #15141a
         right: 0
         top: 0
         transform: skewX(52deg) skewY(0)
-        background-color: $panel-color
+        background-color: black
 
     span
       transform: skewX(52deg) skewY(0)
