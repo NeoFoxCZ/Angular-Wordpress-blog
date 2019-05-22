@@ -9,6 +9,7 @@ export class Post {
         rendered: string;
     };
     date: string;
+    slug: string;
     link: string;
     'wp:featuredmedia': {
       'href': string;

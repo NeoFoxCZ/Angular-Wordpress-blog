@@ -1,3 +1,9 @@
-<p *ngFor="let page of instagrams"> {{page.JSON.pagination.next_max_id}}</p>
-
-
+<ngx-slick-carousel class="instagram"
+                    #slickModal="slick-carousel"
+                    [config]="slideConfig">
+    <div ngxSlickItem *ngFor="let slide of configs" class="slide">
+        <a href="{{slide.link}}" rel="noopener" alt="instagram" >
+            <img alt="instagram" src="{{ slide.images.standard_resolution.url }}" width="100%">
+        </a>
+    </div>
+</ngx-slick-carousel>

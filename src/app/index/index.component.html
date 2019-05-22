@@ -14,10 +14,18 @@
             <h1>O mne</h1>
             <div class="index-about__text">
                 Nějaký ten text o mne. :)
+
+            </div>
+            <div class="index-about__twitter">
+                <a class="twitter-timeline" href="https://twitter.com/Neo__Fox?ref_src=twsrc%5Etfw"></a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
         </div>
 
-        <app-post-list class="index__posts" [stateIndex]="true"></app-post-list>
+        <div class="index-about">
+            <h1>Příspěvky na blogu</h1>
+            <app-post-list class="index__posts" [stateIndex]="true"></app-post-list>
+        </div>
 
         <ngx-slick-carousel class=""
                             #slickModal="slick-carousel"

@@ -33,20 +33,14 @@
 -->
 
   <!--<app-social-panel></app-social-panel>-->
+<ng-container>
   <router-outlet></router-outlet>
+  <app-instagram-feed></app-instagram-feed>
+</ng-container>
 
-<!--<app-instagram-feed></app-instagram-feed>-->
 
 
-<!--<ngx-slick-carousel class="carousel"
-                    #slickModal="slick-carousel"
-                    [config]="slideConfig">
-  <div ngxSlickItem *ngFor="let slide of configs" class="slide">
-    <a href="{{slide.link}}" rel="noopener" alt="instagram" >
-      <img alt="instagram" src="{{ slide.images.standard_resolution.url }}" width="100%">
-    </a>
-  </div>
-</ngx-slick-carousel>-->
+
 
 <div class="footer">
   <span>© Lukáš Müller, {{currentYear}} | <i class="fab fa-angular"></i> {{currentVersionA}}</span>

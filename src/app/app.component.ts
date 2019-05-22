@@ -33,11 +33,7 @@ export class AppComponent implements OnInit {
 
   isLoaderLoading: boolean;
 
-  slideConfig = {
-    'slidesToShow': 8, 'slidesToScroll': 2,
-    'prevArrow': false, 'nextArrow': false,
-    'dots': false, 'autoplay': true
-  };
+
 
   constructor( private pagesService: PagesService, private router: Router,
                public googleAnalyticsEventsService: GoogleAnalyticsEventsService,

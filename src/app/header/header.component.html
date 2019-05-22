@@ -1,7 +1,5 @@
 <div class="header">
-
-    <div class="header__menu">
-    </div>
+    <div class="header__menu"></div>
     <div class="header__menu header__menu--right">
          <a class="header__item" [routerLink]="'blog'" *ngIf="pages"
             [routerLinkActive]="['header__item--active']">
@@ -11,8 +9,8 @@
            [routerLinkActive]="['header__item--active']" >
              <span [translate]="page.title.rendered"></span>
          </a>
-        <a class="header__item" [routerLink]="'blog'" *ngIf="pages">
-                <span>ENG</span>
+        <a class="header__item"  *ngIf="pages">
+                <span></span>
         </a>
     </div>
 </div>
