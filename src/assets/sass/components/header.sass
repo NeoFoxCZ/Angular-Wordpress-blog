@@ -40,9 +40,9 @@ $panel-color: #15141a
     height: 100%
     align-items: center
     display: flex
-    transform: skewX(-52deg) skewY(0)
+    //transform: skewX(-52deg) skewY(0)
     background-color: black
-    padding: 0 40px
+    padding: 0 20px
     //margin: 0 25px
     color: white
     position: relative
@@ -57,12 +57,12 @@ $panel-color: #15141a
     &--active
       &:after
         content: ''
-        width: 50%
+        width: calc(100% - 40px)
         top: 42px
         height: 4px
         background-color: white
         position: absolute
-        left: 35%
+        //left: 35%
         animation: animation-show .2s
 
     &:last-child
@@ -77,18 +77,18 @@ $panel-color: #15141a
       span
         width: 23.2px
 
-      &:before
-        content: ''
-        position: absolute
-        height: 65px
-        width: 60px
-        right: 0
-        top: 0
-        transform: skewX(52deg) skewY(0)
-        background-color: black
+      //&:before
+        // content: ''
+        // position: absolute
+        // height: 65px
+        // width: 60px
+        // right: 0
+        // top: 0
+        // transform: skewX(52deg) skewY(0)
+        // background-color: black
 
-    span
-      transform: skewX(52deg) skewY(0)
+    //span
+      //transform: skewX(52deg) skewY(0)
 
 @keyframes animation-show
   0%
