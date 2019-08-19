@@ -12,7 +12,7 @@ import {AppService} from '../../app.service';
 @Component({
   selector: 'app-post-single',
   templateUrl: './post-single.component.html',
-  styleUrls: ['./post-single.component.scss'],
+  styleUrls: ['../../../assets/sass/pages/post-single.sass'],
   encapsulation: ViewEncapsulation.ShadowDom,
   providers: [PostsService, AppService]
 })
