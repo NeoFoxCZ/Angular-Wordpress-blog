@@ -1,0 +1,101 @@
+.post-list
+  &__list
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    width: 100%
+    max-width: 1170px
+    min-height: 100%
+    margin: auto
+    justify-content: space-around
+    padding: 25px 15px
+
+  &__item
+    background: white
+    position: absolute
+    width: calc((100% / 4) - 60px)
+    cursor: pointer
+    margin: 10px 0
+    border: 1px solid #e7e7e7
+    transition: all .2s
+    outline: none
+    height: 300px
+    border-radius: 1px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: flex-start
+
+    img
+      bottom: 10px
+      right: 10%
+
+    &:first-child,
+    &:last-child
+      width: calc((100% / 2) - 60px)
+
+      img
+        bottom: 20px
+        right: 20px
+
+      .article__title,
+      .article__category
+        align-self: flex-start
+
+    &:hover,
+    &:focus
+      box-shadow: 0 2px 5px rgba(0, 0, 0, .1)
+      margin: 5px 0 15px
+
+    &--index
+      height: 250px
+      width: calc((100% / 2) - 90px)
+
+      &:hover,
+      &:focus
+        box-shadow: none
+
+        h1
+          font-size: 32px
+
+
+
+  &__img
+    background-color: rgba(128,128,128, 0.12)
+    width: 100%
+    background-position: center
+    height: 120px
+    background-repeat: no-repeat
+    background-size: cover
+
+  &__title
+    width: 100%
+    font-size: 22px
+    line-height: 32px
+    font-weight: 600
+    margin-top: 9px
+    letter-spacing: .28px
+    text-align: center
+
+  &__category
+    color: white
+
+  &__excerpt
+    max-height: 100px
+    width: 100%
+    text-align: center
+    overflow: hidden
+
+  &__button
+    position: absolute
+    bottom: 15px
+    right: 20px
+    padding: 10px 25px
+    border-radius: 5px
+    background-color: white
+    cursor: pointer
+    box-shadow: 0 3px 3px -2px rgba(0,0,0,.2), 0 3px 4px 0 rgba(0,0,0,.14), 0 1px 8px 0 rgba(0,0,0,.12)
+    transition:  all .2s
+
+    &:hover
+      box-shadow: 0 3px 5px 0 rgba(0,0,0,0.8)

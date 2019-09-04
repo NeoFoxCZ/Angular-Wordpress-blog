@@ -1,4 +1,3 @@
-
 import {switchMap} from 'rxjs/operators';
 import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 import { PostsService } from '../posts.service';

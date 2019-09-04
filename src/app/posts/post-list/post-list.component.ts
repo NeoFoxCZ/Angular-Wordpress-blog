@@ -11,7 +11,7 @@ import {Observable} from "rxjs/Rx";
 @Component({
   selector: 'app-post-list',
   templateUrl: './post-list.component.html',
-  styleUrls: ['./post-list.component.scss',
+  styleUrls: ['../../../assets/sass/pages/post-list.sass',
     '../../../assets/sass/components/pagination.sass'],
   providers: [PostsService, AppService]
 })
