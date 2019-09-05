@@ -4,7 +4,6 @@ import { PostsService } from '../posts.service';
 import { ActivatedRoute, ParamMap } from '@angular/router';
 import { HttpErrorResponse } from '@angular/common/http';
 import { Post } from '../post';
-
 import {DomSanitizer, Title} from '@angular/platform-browser';
 import {AppService} from '../../app.service';
 
@@ -15,8 +14,8 @@ import {AppService} from '../../app.service';
   encapsulation: ViewEncapsulation.ShadowDom,
   providers: [PostsService, AppService]
 })
-export class PostSingleComponent implements OnInit {
 
+export class PostSingleComponent implements OnInit {
   post: Post;
   description: string;
 
@@ -41,11 +40,10 @@ export class PostSingleComponent implements OnInit {
       (err: HttpErrorResponse) => err.error instanceof Error ?
         console.log('An error occurred:', err.error.message) :
         console.log(`Backend returned code ${err.status}, body was: ${err.error}`)
-    );
+    )
   }
 
   public setTitle( newTitle: string ) {
-    this.titleService.setTitle( newTitle );
+    this.titleService.setTitle( newTitle )
   }
-
 }
