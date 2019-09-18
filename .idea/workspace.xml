@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9daf7d28-0880-4c4f-8f58-b7bef2b0d50f" name="Default" comment="post fixing">
-      <change afterPath="$PROJECT_DIR$/src/assets/sass/pages/post-list.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/posts/post-list/post-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/posts/post-list/post-list.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/posts/post-list/post-list.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/posts/post-list/post-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/posts/post-list/post-list.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/posts/post-single/post-single.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/posts/post-single/post-single.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/sass/pages/post-single.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/sass/pages/post-single.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/sass/pages/index.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/sass/pages/index.sass" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,26 +16,8 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/posts/post-list/post-list.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/posts/post-list/post-list.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/app/posts/post-single/post-single.component.ts">
+        <entry file="file://$PROJECT_DIR$/src/assets/sass/pages/index.sass">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
@@ -120,7 +97,6 @@
         <option value="$PROJECT_DIR$/src/assets/sass/main.scss" />
         <option value="$PROJECT_DIR$/src/assets/sass/components/header.sass" />
         <option value="$PROJECT_DIR$/src/app/index/index.component.html" />
-        <option value="$PROJECT_DIR$/src/assets/sass/pages/index.sass" />
         <option value="$PROJECT_DIR$/src/app/posts/post-single/post-single.component.scss" />
         <option value="$PROJECT_DIR$/src/app/posts/post-single/post-single.component.html" />
         <option value="$PROJECT_DIR$/src/assets/sass/pages/post-single.sass" />
@@ -130,6 +106,7 @@
         <option value="$PROJECT_DIR$/src/app/posts/post-list/post-list.component.scss" />
         <option value="$PROJECT_DIR$/src/app/posts/post-list/post-list.sass" />
         <option value="$PROJECT_DIR$/src/app/posts/post-single/post-single.component.ts" />
+        <option value="$PROJECT_DIR$/src/assets/sass/pages/index.sass" />
       </list>
     </option>
   </component>
@@ -141,74 +118,33 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="821" />
+    <option name="x" value="1912" />
+    <option name="y" value="22" />
+    <option name="width" value="1936" />
+    <option name="height" value="1066" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Personal_blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Personal_blog" type="462c0819:PsiDirectoryNode" />
+              <item name="Angular-Wordpress-blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Angular-Wordpress-blog" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Personal_blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Personal_blog" type="462c0819:PsiDirectoryNode" />
+              <item name="Angular-Wordpress-blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Angular-Wordpress-blog" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Personal_blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Personal_blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Personal_blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Personal_blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="posts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Personal_blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Personal_blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="posts" type="462c0819:PsiDirectoryNode" />
-              <item name="post-single" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Personal_blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Personal_blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Personal_blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Personal_blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="sass" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Personal_blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Personal_blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="sass" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -284,6 +220,7 @@
       <workItem from="1566215703657" duration="4556000" />
       <workItem from="1567088313935" duration="360000" />
       <workItem from="1567594297494" duration="1486000" />
+      <workItem from="1568798207247" duration="700000" />
     </task>
     <task id="LOCAL-00001" summary="GitIgnore fix">
       <created>1554750930489</created>
@@ -331,13 +268,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69725000" />
+    <option name="totallyTimeSpent" value="70425000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="821" extended-state="6" />
+    <frame x="1912" y="22" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24920969" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Gulp" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -443,36 +380,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="post fixing" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/HTML.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="43" lean-forward="true" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out-tsc/spec/app/posts/post-single/post-single.component.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/sass/README.md" />
-    <entry file="file://$PROJECT_DIR$/src/bundle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1252" selection-start-column="1252" selection-end-column="1252" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@ngx-translate/core/lib/translate.service.d.ts" />
     <entry file="file://$PROJECT_DIR$/node_modules/@angular/router/src/router.d.ts" />
     <entry file="file://$PROJECT_DIR$/node_modules/rxjs/src/internal/Observable.ts" />
     <entry file="file://$PROJECT_DIR$/src/app/posts/blog.component.ts">
@@ -700,26 +607,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/posts/post-list/post-list.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/posts/post-list/post-list.component.spec.ts" />
     <entry file="file://$PROJECT_DIR$/src/assets/sass/pages/post-list.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-106">
           <caret line="46" column="42" selection-start-line="46" selection-start-column="42" selection-end-line="46" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/sass/pages/index.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
         </state>
       </provider>
     </entry>
@@ -730,17 +622,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/posts/post-list/post-list.component.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1680">
-          <caret line="112" selection-start-line="112" selection-end-line="112" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/app/posts/post-list/post-list.component.scss" />
+    <entry file="file://$PROJECT_DIR$/src/app/posts/post-list/post-list.sass" />
+    <entry file="file://$PROJECT_DIR$/back/functions.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/posts/post-list/post-list.sass">
+    <entry file="file://$PROJECT_DIR$/src/HTML.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/environments/environment.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/posts/post-list/post-list.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1350">
-          <caret line="90" selection-start-line="90" selection-end-line="90" />
+        <state relative-caret-position="236">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="4" selection-end-line="16" selection-end-column="76" />
         </state>
       </provider>
     </entry>
@@ -751,14 +647,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/posts/post-list/post-list.component.html">
+    <entry file="file://$PROJECT_DIR$/src/app/posts/post-single/post-single.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+        <state relative-caret-position="374">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/posts/post-single/post-single.component.ts">
+    <entry file="file://$PROJECT_DIR$/back/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/production-build.cmd">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/sass/pages/index.sass">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
