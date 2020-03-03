@@ -10,13 +10,15 @@
     min-height: 100%
     margin: auto
     justify-content: space-around
-    padding: 25px 15px
+
+    @media #{$vd-screen-md-up}
+      padding: 25px 15px
 
   &__item
     background: white
     //position: absolute
 
-    width: calc((100% / 4) - 60px)
+    width: calc((100%) - 60px)
     cursor: pointer
     margin: 10px 0
     border: 1px solid #e7e7e7
@@ -29,8 +31,11 @@
     align-items: center
     justify-content: flex-start
 
-    @media #{$vd-screen-lg-down}
+    @media #{$vd-screen-md-up}
       width: calc((100% / 2) - 60px)
+
+    @media #{$vd-screen-lg-up}
+      width: calc((100% / 4) - 60px)
 
 
     img
@@ -39,7 +44,10 @@
 
     &:first-child,
     &:last-child
-      width: calc((100% / 2) - 60px)
+      width: calc((100%) - 60px)
+
+      @media #{$vd-screen-md-up}
+        width: calc((100% / 2) - 60px)
 
       img
         bottom: 20px

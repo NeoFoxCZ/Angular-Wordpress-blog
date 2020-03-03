@@ -1,5 +1,6 @@
 $width-right: 45%
 $panel-color: #15141a
+@import '../variables'
 
 .header
   width: 100%
@@ -17,6 +18,10 @@ $panel-color: #15141a
     top: 0
     z-index: -1
 
+    @media #{$vd-screen-md-down}
+      display: none
+
+
   &__menu
     display: flex
     flex-direction: row
@@ -33,9 +38,12 @@ $panel-color: #15141a
       right: 0
       //width: $width-right
       height: 65px
-      display: flex
+
+      //display: none
       align-items: center
-      left: 65px
+
+      @media #{$vd-screen-md-up}
+        display: flex
 
   &__item
     position: relative

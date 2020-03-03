@@ -1,3 +1,5 @@
+@import '../variables'
+
 .post-single
   &__imageFrame
     width: 100%
@@ -46,7 +48,7 @@
 
   &__arrow
     position: absolute
-    left: -35px
+    left: -15px
     font-size: 30px
     padding: 10px 20px
     top: 50%
@@ -59,7 +61,12 @@
     &:hover
       background-color: black
       color: white
-      left: -40px
+      @media #{$vd-screen-md-up}
+        left: -40px
+
+    @media #{$vd-screen-md-up}
+      left: -35px
+
 
   &__title
     z-index: 1

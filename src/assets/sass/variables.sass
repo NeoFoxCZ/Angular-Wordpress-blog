@@ -9,14 +9,8 @@ h1
 h2
   color: $gray
 
-//div
-.app-content
-  display: flex
-  flex-direction: column
-  width: 100%
-  margin: auto
-  max-width: 1210px
-  padding-left: 85px
+
+
 
 // breakpoints
 $vd-screen-sm: 600px
@@ -30,4 +24,12 @@ $vd-screen-lg-up: "(min-width: #{$vd-screen-lg})"
 $vd-screen-sm-down: "(max-width: #{$vd-screen-sm - 1})"
 $vd-screen-md-down: "(max-width: #{$vd-screen-md - 1})"
 $vd-screen-lg-down: "(max-width: #{$vd-screen-lg - 1})"
-
+//div
+.app-content
+  display: flex
+  flex-direction: column
+  width: 100%
+  margin: auto
+  max-width: 1210px
+  @media #{$vd-screen-md-up}
+    padding-left: 85px
