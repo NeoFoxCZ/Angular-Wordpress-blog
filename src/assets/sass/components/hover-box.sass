@@ -1,0 +1,75 @@
+.hover-box
+  visibility: hidden
+  position: absolute
+
+  &__hovering
+    position: relative
+    display: flex
+
+    &:hover
+      img
+        transform: scale(0.7)
+      .hover-box
+        visibility: visible
+        border-radius: 0!important
+
+  &--LT
+    left: 0
+    right: 0
+    top: 5px
+    border-right-width: 0
+    border-bottom-width: 0
+    border-radius: 90% 0 0
+    content: ""
+    width: 15px
+    height: 15px
+    opacity: 1
+    border-style: solid
+    border-image: initial
+    border-color: rgb(255, 255, 255)
+    transition: border-radius 250ms ease 0s, border-color 250ms ease 0s, border-width 250ms ease 0s, opacity 250ms ease 0s, transform 250ms ease 0s
+
+  &--LB
+    bottom: 5px
+    left: 0
+    border-right-width: 0
+    border-top-width: 0
+    border-radius: 0 0 0 90%
+    content: ""
+    width: 15px
+    height: 15px
+    opacity: 1
+    border-style: solid
+    border-image: initial
+    border-color: rgb(255, 255, 255)
+    transition: border-radius 250ms ease 0s, border-color 250ms ease 0s, border-width 250ms ease 0s, opacity 250ms ease 0s, transform 250ms ease 0s
+
+  &--RT
+    top: 5px
+    right: 0
+    border-left-width: 0
+    border-bottom-width: 0
+    border-radius: 0 90% 0 0
+    content: ""
+    width: 15px
+    height: 15px
+    opacity: 1
+    border-style: solid
+    border-image: initial
+    border-color: rgb(255, 255, 255)
+    transition: border-radius 250ms ease 0s, border-color 250ms ease 0s, border-width 250ms ease 0s, opacity 250ms ease 0s, transform 250ms ease 0s
+
+  &--RB
+    bottom: 5px
+    right: 0
+    border-left-width: 0
+    border-top-width: 0
+    border-radius: 0 0 90% 0
+    content: ""
+    width: 15px
+    height: 15px
+    opacity: 1
+    border-style: solid
+    border-image: initial
+    border-color: rgb(255, 255, 255)
+    transition: border-radius 250ms ease 0s, border-color 250ms ease 0s, border-width 250ms ease 0s, opacity 250ms ease 0s, transform 250ms ease 0s

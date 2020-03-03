@@ -15,7 +15,7 @@ declare let ga: Function;
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['../assets/sass/main.scss'],
+  styleUrls: ['../assets/sass/main.scss', '../assets/sass/components/hover-box.sass'],
   encapsulation: ViewEncapsulation.None,
   providers: [PagesService]
 })

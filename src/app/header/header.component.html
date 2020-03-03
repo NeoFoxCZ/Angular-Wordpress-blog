@@ -1,38 +1,38 @@
 <div class="header">
     <div class="header__menu"></div>
     <div class="header__menu header__menu--right">
-        <a class="header__item" [routerLink]="'/'" [routerLinkActiveOptions]="{exact: true}" *ngIf="pages"
+        <a class="header__item hover-box__hovering" [routerLink]="'/'" [routerLinkActiveOptions]="{exact: true}" *ngIf="pages"
                 [routerLinkActive]="['header__item--active']">
                 <span>Domů</span>
 
-            <div class="header-box header-box--LT"></div>
-            <div class="header-box header-box--LB"></div>
-            <div class="header-box header-box--RT"></div>
-            <div class="header-box header-box--RB"></div>
+            <div class="hover-box hover-box--LT"></div>
+            <div class="hover-box hover-box--LB"></div>
+            <div class="hover-box hover-box--RT"></div>
+            <div class="hover-box hover-box--RB"></div>
          </a>
-         <a class="header__item" [routerLink]="'blog'" *ngIf="pages"
+         <a class="header__item hover-box__hovering" [routerLink]="'blog'" *ngIf="pages"
             [routerLinkActive]="['header__item--active']">
             <span>Blog</span>
 
-             <div class="header-box header-box--LT"></div>
-             <div class="header-box header-box--LB"></div>
-             <div class="header-box header-box--RT"></div>
-             <div class="header-box header-box--RB"></div>
+             <div class="hover-box hover-box--LT"></div>
+             <div class="hover-box hover-box--LB"></div>
+             <div class="hover-box hover-box--RT"></div>
+             <div class="hover-box hover-box--RB"></div>
          </a>
-         <a class="header__item" *ngFor="let page of pages" [routerLink]="page.slug"
+         <a class="header__item hover-box__hovering" *ngFor="let page of pages" [routerLink]="page.slug"
            [routerLinkActive]="['header__item--active']" >
              <span [translate]="page.title.rendered"></span>
-             <div class="header-box header-box--LT"></div>
-             <div class="header-box header-box--LB"></div>
-             <div class="header-box header-box--RT"></div>
-             <div class="header-box header-box--RB"></div>
+             <div class="hover-box hover-box--LT"></div>
+             <div class="hover-box hover-box--LB"></div>
+             <div class="hover-box hover-box--RT"></div>
+             <div class="hover-box hover-box--RB"></div>
          </a>
-        <a class="header__item"  *ngIf="pages">
+        <a class="header__item hover-box__hovering"  *ngIf="pages">
                 <span></span>
-            <div class="header-box header-box--LT"></div>
-            <div class="header-box header-box--LB"></div>
-            <div class="header-box header-box--RT"></div>
-            <div class="header-box header-box--RB"></div>
+            <div class="hover-box hover-box--LT"></div>
+            <div class="hover-box hover-box--LB"></div>
+            <div class="hover-box hover-box--RT"></div>
+            <div class="hover-box hover-box--RB"></div>
         </a>
     </div>
 </div>
