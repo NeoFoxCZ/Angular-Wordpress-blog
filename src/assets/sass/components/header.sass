@@ -37,6 +37,8 @@ $panel-color: #15141a
       align-items: center
 
   &__item
+
+    position: relative
     height: 100%
     align-items: center
     display: flex
@@ -45,14 +47,15 @@ $panel-color: #15141a
     padding: 0 20px
     //margin: 0 25px
     color: white
-    position: relative
     text-decoration: none
     border-right: 1px solid black
     border-left: 1px solid black
     transition: all .1s
 
     &:hover
-      background-color: gray
+      .header-box
+        visibility: visible
+        border-radius: 0!important
 
     &--active
       &:after
@@ -95,3 +98,68 @@ $panel-color: #15141a
     width: 0
   100%
     width: 50%
+
+.header-box
+  visibility: hidden
+  position: absolute
+
+  &--LT
+    left: 0
+    right: 0
+    top: 5px
+    border-right-width: 0
+    border-bottom-width: 0
+    border-radius: 90% 0 0
+    content: ""
+    width: 15px
+    height: 15px
+    opacity: 1
+    border-style: solid
+    border-image: initial
+    border-color: rgb(255, 255, 255)
+    transition: border-radius 250ms ease 0s, border-color 250ms ease 0s, border-width 250ms ease 0s, opacity 250ms ease 0s, transform 250ms ease 0s
+
+  &--LB
+    bottom: 5px
+    left: 0
+    border-right-width: 0
+    border-top-width: 0
+    border-radius: 0 0 0 90%
+    content: ""
+    width: 15px
+    height: 15px
+    opacity: 1
+    border-style: solid
+    border-image: initial
+    border-color: rgb(255, 255, 255)
+    transition: border-radius 250ms ease 0s, border-color 250ms ease 0s, border-width 250ms ease 0s, opacity 250ms ease 0s, transform 250ms ease 0s
+
+  &--RT
+    top: 5px
+    right: 0
+    border-left-width: 0
+    border-bottom-width: 0
+    border-radius: 0 90% 0 0
+    content: ""
+    width: 15px
+    height: 15px
+    opacity: 1
+    border-style: solid
+    border-image: initial
+    border-color: rgb(255, 255, 255)
+    transition: border-radius 250ms ease 0s, border-color 250ms ease 0s, border-width 250ms ease 0s, opacity 250ms ease 0s, transform 250ms ease 0s
+
+  &--RB
+    bottom: 5px
+    right: 0
+    border-left-width: 0
+    border-top-width: 0
+    border-radius: 0 0 90% 0
+    content: ""
+    width: 15px
+    height: 15px
+    opacity: 1
+    border-style: solid
+    border-image: initial
+    border-color: rgb(255, 255, 255)
+    transition: border-radius 250ms ease 0s, border-color 250ms ease 0s, border-width 250ms ease 0s, opacity 250ms ease 0s, transform 250ms ease 0s
