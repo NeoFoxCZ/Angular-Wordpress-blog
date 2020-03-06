@@ -1,4 +1,4 @@
-$width-right: 45%
+$width-right: 40%
 $panel-color: #15141a
 @import '../variables'
 
@@ -26,8 +26,18 @@ $panel-color: #15141a
     display: flex
     flex-direction: row
     align-self: center
-    justify-content: flex-start
+    justify-content: space-between
     width: calc(100% - #{$width-right})
+    .header__item
+      padding: 0 8px
+      width: 100%
+
+    @media #{$vd-screen-md-up}
+      justify-content: flex-start
+      .header__item
+        padding: 0 20px
+        width: auto
+
 
     &--right
       z-index: 5
@@ -59,7 +69,9 @@ $panel-color: #15141a
     border-right: 1px solid black
     border-left: 1px solid black
     transition: all .1s
-
+    min-width: 50px
+    text-align: center
+    justify-content: center
 
     &--active
       &:after
@@ -82,17 +94,20 @@ $panel-color: #15141a
         background-color: black
 
       span
-        width: 23.2px
+        width: 100%
+        white-space: nowrap
+        text-align: center
 
-      //&:before
-        // content: ''
-        // position: absolute
-        // height: 65px
-        // width: 60px
-        // right: 0
-        // top: 0
-        // transform: skewX(52deg) skewY(0)
-        // background-color: black
+
+//&:before
+  // content: ''
+  // position: absolute
+  // height: 65px
+  // width: 60px
+  // right: 0
+  // top: 0
+  // transform: skewX(52deg) skewY(0)
+  // background-color: black
 
     //span
       //transform: skewX(52deg) skewY(0)
