@@ -2,12 +2,18 @@
   <div class="post-list__list">
     <ng-container *ngIf="posts">
         <div [routerLink]="stateIndex ? 'blog/' + post.slug : post.slug"
-             class="post-list__item" *ngFor="let post of posts">
+             class="post-list__item hover-box__hovering hover-box__hovering--article" *ngFor="let post of posts">
+
           <div class="post-list__img" [style.backgroundImage]="'url(' + post?.better_featured_image?.media_details.sizes.medium_large.source_url + ')'">
           </div>
           <div class="post-list__category"> článek </div>
           <div *ngIf="post.title.rendered" class="post-list__title"> {{ post.title.rendered}} </div>
           <div class="post-list__excerpt" [innerHTML]="post.excerpt.rendered"></div>
+
+          <div class="hover-box hover-box--LT"></div>
+          <div class="hover-box hover-box--LB"></div>
+          <div class="hover-box hover-box--RT"></div>
+          <div class="hover-box hover-box--RB"></div>
         </div>
     </ng-container>
   </div>
