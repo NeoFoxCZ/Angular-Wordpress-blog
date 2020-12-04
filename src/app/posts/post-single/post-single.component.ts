@@ -33,7 +33,7 @@ export class PostSingleComponent implements OnInit {
       this.postsService.getPost(params.get('slug'))))
     .subscribe(
       (post: Post[]) => (this.post = post[0],
-        this.setTitle('Mulu.cz | ' + this.post.title.rendered),
+        this.setTitle('autoskolamikmik.cz | ' + this.post.title.rendered),
         this.description = parser.parseFromString( this.post.excerpt.rendered, 'text/html').body.innerText,
         this.appService.setDescription(this.description)
       ),

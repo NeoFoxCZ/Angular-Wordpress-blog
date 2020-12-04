@@ -33,7 +33,7 @@ export class PageSingleComponent implements OnInit, AfterViewInit {
         this.pageService.getPage(params.get('slug'))))
       .subscribe(
         (page: Page[]) => (this.page = page[0],
-          this.setTitle('Mulu.cz | ' + this.page.title.rendered)),
+          this.setTitle('autoskolamikmik.cz | ' + this.page.title.rendered)),
         (err: HttpErrorResponse) => err.error instanceof Error ?
           console.log('An error occurred:', err.error.message) :
           console.log(`Backend returned code ${err.status}, body was: ${err.error}`)

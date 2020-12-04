@@ -16,7 +16,7 @@ export class BlogComponent implements OnInit {
                private titleService: Title, private appService: AppService) { }
 
   ngOnInit() {
-    this.titleService.setTitle('Mulu.cz | Blog');
+    this.titleService.setTitle('autoskolamikmik.cz | Blog');
     this.appService.setDescription('Tvorba webových stránek, aplikací a osobní blog a články z oblastí technologie.');
   };
 

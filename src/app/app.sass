@@ -1,0 +1,236 @@
+$color-main: #5d9588
+
+.header
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  max-width: 1200px
+  width: 100%
+  margin: 10px auto
+
+  img
+    max-width: 150px
+    width: 100%
+    height: 100%
+
+.header-block
+  display: flex
+  flex-direction: row
+  justify-content: space-around
+  align-items: center
+
+  &__item
+    padding: 0 10px
+
+  &__button
+    border: 1px solid black
+    padding: 15px
+    border-radius: 5px
+    cursor: pointer
+    transition: all .2s
+
+    &:hover
+      background-color: $color-main
+      color: white
+
+.paralax
+  height: 300px
+  width: 100%
+  background-attachment: fixed
+  background-position: bottom
+  background-repeat: no-repeat
+  background-size: cover
+  margin-bottom: 80px
+  background-image: url("https://images.pexels.com/photos/56832/road-asphalt-space-sky-56832.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260")
+  position: relative
+
+  &__box
+    position: relative
+    display: flex
+    justify-content: center
+    width: 100%
+    bottom: -235px
+    max-width: 800px
+    margin: auto
+
+
+  &__item
+    width: calc(100% / 3)
+    height: 150px
+    margin: 0 20px
+    border-radius: 10px
+    background-color: white
+    box-shadow: 0 4px 8px 0 #020e0e
+    color: $color-main
+    display: flex
+    align-items: center
+    font-size: 15px
+    text-align: center
+    justify-content: center
+    flex-direction: column
+
+    span
+      color: black
+
+    i
+      font-size: 40px
+      padding-bottom: 10px
+
+.index-block
+  display: flex
+  width: 100%
+  max-width: 1200px
+  flex-direction: column
+  margin: 100px auto
+
+  &__title
+    font-size: 30px
+
+
+.index-block-price
+  display: flex
+  width: 100%
+  flex-direction: row
+  justify-content: space-around
+  flex-wrap: wrap
+
+  &__title
+    font-size: 25px
+
+  &__price
+    font-size: 18px
+    text-align: left
+
+  &__button
+    width: 100%
+    background-color: #5d9588
+    padding: 10px 0
+    color: white
+    border-radius: 3px
+    text-align: center
+    font-weight: bold
+    cursor: pointer
+    transition: all .2s
+
+    &:hover
+      background-color: #477369
+
+
+
+  &__item
+    display: flex
+    flex-direction: column
+    width: calc((100% / 3) - 20px)
+    height: 180px
+    padding: 20px
+    margin: 10px
+    border: 1px solid black
+    border-radius: 7px
+    justify-content: space-between
+
+.index-block-href
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: space-between
+
+  &__item
+    width: calc((100% / 2) - 40px)
+    border: 1px solid black
+    padding: 20px
+    margin: 10px 0
+    text-align: center
+    font-size: 20px
+    transition: all .2s
+    cursor: pointer
+    color: #5d9588
+
+    &:hover
+      background-color: #5d9588
+      color: white
+      text-decoration: none
+
+.index-block-contact
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  width: 100%
+  align-items: center
+  justify-content: space-between
+
+  &__text
+    font-size: 25px
+    font-weight: bold
+
+  &__wrap
+    display: flex
+    flex-direction: column
+
+  &__href
+    border: 1px solid black
+    padding: 20px
+    margin: 10px 0
+    text-align: center
+    font-size: 20px
+    transition: all .2s
+    cursor: pointer
+    color: #5d9588
+
+    &:hover
+      background-color: #5d9588
+      color: white
+      text-decoration: none
+
+
+.index-frame
+  width: 100%
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  margin: 20px 0
+
+  &__item
+    font-size: 25px
+
+.index-block-about
+  display: flex
+  flex-direction: row
+  max-width: 1200px
+  width: 100%
+  margin: auto
+  align-items: center
+
+  img
+    max-width: 800px
+    height: auto
+    position: relative
+    left: 0
+    animation: autoAnimation 2s
+
+  &__text
+    text-align: justify
+    font-size: 20px
+
+
+@keyframes autoAnimation
+  0%
+    left: -100px
+  100%
+    left: 0
+
+.footer
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 100%
+  padding: 25px
+  color: white
+
+  background-color: #5d9588
+
+
+  a
+    color: white
+    margin-left: 5px

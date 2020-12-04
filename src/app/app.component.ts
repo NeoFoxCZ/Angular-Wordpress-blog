@@ -15,13 +15,13 @@ declare let ga: Function;
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['../assets/sass/main.scss', '../assets/sass/components/hover-box.sass'],
+  styleUrls: ['./app.sass'],
   encapsulation: ViewEncapsulation.None,
   providers: [PagesService]
 })
 
 export class AppComponent implements OnInit {
-  title = 'Mulu.cz';
+  title = 'Autoskolamikmik.cz';
   scrolled =  false;
   scrolledSocial = false;
   pages: Page[];

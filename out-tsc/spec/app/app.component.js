@@ -18,7 +18,7 @@ var AppComponent = /** @class */ (function () {
         this.pagesService = pagesService;
         this.router = router;
         this.googleAnalyticsEventsService = googleAnalyticsEventsService;
-        this.title = 'Mulu.cz';
+        this.title = 'autoskolamikmik.cz';
         this.scrolled = false;
         this.scrolledSocial = false;
         this.router.events.subscribe(function (event) {

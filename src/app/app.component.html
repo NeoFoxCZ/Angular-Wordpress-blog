@@ -1,77 +1,153 @@
-<app-header></app-header>
-<div class="app-left-panel">
-  <a routerLink="/" class="hover-box__hovering">
-    <img class="head__logo" src="http://www.mulu.cz/wp-content/uploads/2018/04/Bez-n†zvu-2.png">
-    <div class="hover-box hover-box--LT"></div>
-    <div class="hover-box hover-box--LB"></div>
-    <div class="hover-box hover-box--RT"></div>
-    <div class="hover-box hover-box--RB"></div>
-  </a>
 
-  <div class="app-left-panel__bottom">
-    <a href="https://www.linkedin.com/in/luk%C3%A1%C5%A1-m%C5%B1ller-74a24b137/" rel="noopener" target="_blank">
-      <i class="fab fa-linkedin-in hover-box__hovering">
-        <div class="hover-box hover-box--LT"></div>
-        <div class="hover-box hover-box--LB"></div>
-        <div class="hover-box hover-box--RT"></div>
-        <div class="hover-box hover-box--RB"></div>
-      </i>
-    </a>
-    <a href="https://github.com/NeoFoxCZ" rel="noopener" target="_blank">
-      <i class="fab fa-github hover-box__hovering"  >
-        <div class="hover-box hover-box--LT"></div>
-        <div class="hover-box hover-box--LB"></div>
-        <div class="hover-box hover-box--RT"></div>
-        <div class="hover-box hover-box--RB"></div>
-      </i>
-    </a>
-    <a href="https://twitter.com/neo__fox" rel="noopener" target="_blank">
-      <i class="fab fa-twitter hover-box__hovering">
-        <div class="hover-box hover-box--LT"></div>
-        <div class="hover-box hover-box--LB"></div>
-        <div class="hover-box hover-box--RT"></div>
-        <div class="hover-box hover-box--RB"></div>
-      </i>
-    </a>
-    <a href="https://www.facebook.com/lukasmuller0" rel="noopener" target="_blank">
-       <i class="fab fa-facebook-f hover-box__hovering">
-          <div class="hover-box hover-box--LT"></div>
-          <div class="hover-box hover-box--LB"></div>
-          <div class="hover-box hover-box--RT"></div>
-          <div class="hover-box hover-box--RB"></div>
-      </i>
-    </a>
+<div class="header">
+  <img src="http://www.autoskolamikmik.cz/images/logo.png">
+  <div class="header-block">
+    <div class="header-block__item">
+      Ceník
+    </div>
+    <div class="header-block__item">
+      O mne
+    </div>
+    <div class="header-block__item">
+      Odkazy
+    </div>
+    <div class="header-block__item">
+      Kontakty
+    </div>
+  </div>
+  <div class="header-block">
+    <div class="header-block__button">
+      Chci do autoškoly
+    </div>
   </div>
 
 </div>
-<!--
-<div class="head" [ngClass]="scrolled ? 'fixed' : ''">
-  <a routerLink="/">
-    <img class="head__logo" src="http://www.mulu.cz/wp-content/uploads/2018/04/Bez-n†zvu-2.png">
-  </a>
-  <div class="head__menu"> test
-    <a class="head__link" routerLink="blog" [routerLinkActive]="['active']" [translate]="'blog'"></a>
-    <a class="head__link" *ngFor="let page of pages" [routerLink]="page.slug"
-       [routerLinkActive]="['active']" [translate]="page.title.rendered"> </a>
-  </div>
-  <div routerLink="/kontakt" class="head-social">
-    <div class="head-social__item" [translate]="'Kontakt'">
+
+
+<div class="paralax">
+  <div class="paralax__box">
+    <div class="paralax__item">
+      <i class="fa fa-car" aria-hidden="true"></i>
+      <span>+25 let praxe</span>
     </div>
-    <div class="head-social__show" [translate]="'contact-me'">
+    <div class="paralax__item">
+      <i class="fa fa-credit-card" aria-hidden="true"></i>
+      <span>Přiměřená cena</span>
+    </div>
+    <div class="paralax__item">
+      <i class="fa fa-commenting-o" aria-hidden="true"></i>
+      <span>Seriózní a vstřícný přístup</span>
     </div>
   </div>
 </div>
--->
 
-  <!--<app-social-panel></app-social-panel>-->
-<ng-container>
-  <router-outlet></router-outlet>
-  <app-instagram-feed></app-instagram-feed>
-</ng-container>
+<div class="index-block">
+  <div class="index-block__title"> Ceník </div>
+
+  <div class="index-block-price">
+    <div class="index-block-price__item">
+      <div class="index-block-price__title"> Výuka a výcvik Skupina B</div>
+      <div class="index-block-price__price"> cena: 10 500,- </div>
+      <div class="index-block-price__button"> Mám zájem </div>
+    </div>  <div class="index-block-price__item">
+      <div class="index-block-price__title"> Rychlokurz, skupina B </div>
+      <div class="index-block-price__price"> cena: 12 500,-</div>
+      <div class="index-block-price__button"> Mám zájem </div>
+    </div>  <div class="index-block-price__item">
+      <div class="index-block-price__title"> Vrácení řidičského průkazu</div>
+      <div class="index-block-price__price"> cena: 3 000,-</div>
+      <div class="index-block-price__button"> Mám zájem </div>
+    </div>  
+    <div class="index-block-price__item">
+      <div class="index-block-price__title"> Kondiční jízdy (<b>45</b> minut)</div>
+      <div class="index-block-price__price"> cena: 400,-</div>
+      <div class="index-block-price__button"> Mám zájem </div>
+    </div>
+    <div class="index-block-price__item">
+      <div class="index-block-price__title"> Kondiční jízdy (<b>90</b> minut)</div>
+      <div class="index-block-price__price"> cena: 700,-</div>
+      <div class="index-block-price__button"> Mám zájem </div>
+    </div>
+    <div class="index-block-price__item">
+      <div class="index-block-price__title"> Školení řidičů referentských vozidel</div>
+      <div class="index-block-price__price"> cena: 200,-</div>
+      <div class="index-block-price__button"> Mám zájem </div>
+    </div>
+  </div>
+</div>
+
+<div class="index-block">
+  <div class="index-block__title"> 
+    O mne a vozidlu
+  </div>
+
+  <div class="index-block-about">
+      <img src="http://www.autoskolamikmik.cz/images/bocni.jpg">
+      <div class="index-block-about__text">
+        Jmenuji se Radim Mikunda a otevřel jsem si vlastní autoškolu od září 2014. 
+        Je mi 48 let a v oboru přípravy nových řidičů nejsem žádným nováčkem.
+         <br><br>Učitelováním v autoškole se zabývám již 20 let. 
+         Zdá se mi zbytečné, abych v dnešní elektronické době o sobě psal více, když informace o každém jsou dostupné. 
+         Seriózní přístup a vstřícnost je samozřejmostí. Legraci se nebráním :-)
+      </div>
+  </div>
+</div>
+
+<div class="index-block">
+  <div class="index-block__title">
+    Odkazy
+  </div>
+
+  <div class="index-block-href">
+      <a class="index-block-href__item" href="http://www.vsechny-autoskoly.cz/autoskola_mikmik/hodnoceni/" rel="noopener" target="blank">
+        Recenze autoškoly
+      </a>
+      <a class="index-block-href__item" href="http://etesty.mdcr.cz/" rel="noopener" target="blank">
+        Test pravidel
+      </a>
+      <a class="index-block-href__item" href="http://www.zakruta.cz/autoskola-test-znacek/" rel="noopener" target="blank">
+        Test dopravních značek
+      </a>
+      <a class="index-block-href__item" href="http://www.zakruta.cz/autoskola-test-krizovatek/" rel="noopener" target="blank">
+        Test křižovatek
+      </a>
+  </div>
+
+  <div class="index-block-contact">
+    <div class="index-block-contact__text">Před začátkem autoškoly budou potřeba tyto dokumenty:</div>
+    <div class="index-block-contact__wrap">
+      <a class="index-block-contact__href" href="http://www.autoskolamikmik.cz/images/zadost_o_prijeti_a_k_vyuce.pdf">žádost o přijetí k výuce a výcviku (obě strany)</a>
+      <a class="index-block-contact__href" href="http://www.autoskolamikmik.cz/images/posudek_o_zdravotni_zpusobilosti.pdf">posudek o zdravní způsobilosti</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="index-block">
+
+  
+
+  <div class="index-block__title">
+    Chcete do autoškoly? Kontaktujte mne!
+  </div>
+
+  <div class="index-frame">
+    <div class="index-frame__item">
+      telefon: <a href="tel:+420604444080"> +420 604 444 080 </a>
+    </div>
+    <div class="index-frame__item">
+      email: <a href="mailto:rmikunda@seznam.cz" > rmikunda@seznam.cz</a>
+    </div>
+  </div>
+ 
+</div>
 
 
 <div class="footer">
-  <span>© Lukáš Müller, {{currentYear}} | <i class="fab fa-angular"></i> {{currentVersionA}}</span>
-  <a href="mailto:muller.lukas@mulu.cz"> muller.lukas@mulu.cz </a>
+Vytvořeno © 2020 <a href="https://mulu.cz" rel="noopener" target="blank" > Lukáš Müller</a>
 </div>
 
+
+
+
+<router-outlet></router-outlet>

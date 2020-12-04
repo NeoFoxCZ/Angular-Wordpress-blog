@@ -29,9 +29,10 @@ export class IndexComponent implements OnInit, AfterViewInit {
 
   ngOnInit() {
     window.scroll(0, 0);
-    this.titleService.setTitle('Mulu.cz');
-    this.appService.setDescription('Tvorba webových stránek, aplikací a osobní blog a články z oblastí technologie.');
-    this.appService.setCannonical('test');
+    this.titleService.setTitle('autoskolamikmik.cz');
+    this.appService.setDescription('Jmenuji se Radim Mikunda a otevřel jsem si vlastní autoškolu od září 2014.' +
+        'V přípravě nových řidičů nejsem žádným nováčkem.');
+    this.appService.setCannonical('autoskolamikmik.cz');
 
     this.getPosts();
   };
