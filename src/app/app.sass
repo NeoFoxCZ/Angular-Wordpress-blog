@@ -1,5 +1,17 @@
 $color-main: #5d9588
 
+$vd-screen-sm: 600px
+$vd-screen-md: 768px
+$vd-screen-lg: 1100px
+
+$vd-screen-sm-up: "(min-width: #{$vd-screen-sm})"
+$vd-screen-md-up: "(min-width: #{$vd-screen-md})"
+$vd-screen-lg-up: "(min-width: #{$vd-screen-lg})"
+
+$vd-screen-sm-down: "(max-width: #{$vd-screen-sm - 1})"
+$vd-screen-md-down: "(max-width: #{$vd-screen-md - 1})"
+$vd-screen-lg-down: "(max-width: #{$vd-screen-lg - 1})"
+
 .header
   display: flex
   flex-direction: row
@@ -8,6 +20,9 @@ $color-main: #5d9588
   max-width: 1200px
   width: 100%
   margin: 10px auto
+
+  @media #{$vd-screen-md-down}
+    flex-direction: column
 
   img
     max-width: 150px
@@ -36,6 +51,9 @@ $color-main: #5d9588
     cursor: pointer
     transition: all .2s
 
+    @media #{$vd-screen-md-down}
+      display: none
+
     &:hover
       background-color: $color-main
       color: white
@@ -60,9 +78,9 @@ $color-main: #5d9588
     max-width: 800px
     margin: auto
 
-
   &__item
     width: calc(100% / 3)
+
     height: 150px
     margin: 0 20px
     border-radius: 10px
@@ -95,6 +113,9 @@ $color-main: #5d9588
     line-height: 1.3
     margin-bottom: 15px
 
+    @media #{$vd-screen-md-down}
+      margin: auto
+
   &__image
     display: flex
     justify-content: center
@@ -110,6 +131,9 @@ $color-main: #5d9588
   justify-content: space-around
   flex-wrap: wrap
   margin: -10px
+
+  @media #{$vd-screen-md-down}
+    margin: auto
 
   &__title
     font-size: 25px
@@ -143,6 +167,12 @@ $color-main: #5d9588
     border-radius: 7px
     justify-content: space-between
 
+    @media #{$vd-screen-md-down}
+      width: calc((100% / 2) - 20px)
+
+    @media #{$vd-screen-sm-down}
+      width: calc((100% / 1) - 20px)
+
 .index-block-href
   display: flex
   flex-direction: row
@@ -159,6 +189,10 @@ $color-main: #5d9588
     transition: all .2s
     cursor: pointer
     color: #5d9588
+
+    @media #{$vd-screen-md-down}
+      width: calc((100% / 1) - 20px)
+      margin: 10px auto
 
     &:hover
       background-color: #5d9588
@@ -210,6 +244,9 @@ $color-main: #5d9588
   &__item
     font-size: 25px
 
+  &--contact
+    text-align: center
+
 .index-block-about
   display: flex
   flex-direction: row
@@ -218,13 +255,20 @@ $color-main: #5d9588
   margin: auto
   align-items: center
 
+  @media #{$vd-screen-md-down}
+    flex-direction: column
+
   img
     max-width: 500px
     height: auto
+    width: 100%
     position: relative
     left: 0
     margin-right: 60px
     animation: autoAnimation 2s
+
+    @media #{$vd-screen-md-down}
+      margin-right: 0
 
   &__text
     text-align: justify

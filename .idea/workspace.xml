@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9daf7d28-0880-4c4f-8f58-b7bef2b0d50f" name="Default" comment="some new changes">
+    <list default="true" id="9daf7d28-0880-4c4f-8f58-b7bef2b0d50f" name="Default" comment="add new things into index page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/app.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/index/index.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/index/index.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/index/index.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/index/index.component.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +103,7 @@
       <workItem from="1583223668412" duration="10263000" />
       <workItem from="1583486236372" duration="3569000" />
       <workItem from="1607080802036" duration="1471000" />
-      <workItem from="1607241761502" duration="2254000" />
+      <workItem from="1607241761502" duration="3765000" />
     </task>
     <task id="LOCAL-00001" summary="GitIgnore fix">
       <created>1554750930489</created>
@@ -164,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567712347375</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add new things into index page">
+      <created>1607245482103</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1607245482104</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,6 +219,7 @@
     <MESSAGE value="post fixing" />
     <MESSAGE value="some new changes" />
     <MESSAGE value="post single patch" />
-    <option name="LAST_COMMIT_MESSAGE" value="post single patch" />
+    <MESSAGE value="add new things into index page" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new things into index page" />
   </component>
 </project>
