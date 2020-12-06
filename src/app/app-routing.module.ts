@@ -11,21 +11,6 @@ const routes: Routes = [
     path: '',
     component: IndexComponent,
     pathMatch: 'full'
-  },
-  {
-    path: 'blog',
-    component: BlogComponent,
-    pathMatch: 'full'
-  },
-  {
-    path: 'blog/:slug',
-    component: PostSingleComponent,
-    pathMatch: 'full'
-  },
-  {
-    path: ':slug',
-    component: PageSingleComponent,
-    pathMatch: 'full'
   }
 ];
 

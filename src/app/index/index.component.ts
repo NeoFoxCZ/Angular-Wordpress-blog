@@ -44,6 +44,8 @@ export class IndexComponent implements OnInit, AfterViewInit {
     this.router.navigate(['blog/' + slug]);
   };
 
+  public scrollToTarget = (target: string) => document.getElementById(target).scrollIntoView({behavior: "smooth"})
+
   getPosts() {
     this.posts = [];
     this.currentLang = localStorage.getItem('lang');

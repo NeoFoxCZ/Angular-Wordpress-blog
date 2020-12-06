@@ -1,52 +1,143 @@
-<div class="app-content">
-    <div class="index">
-        <div class="index__left">
-            <h1> Ahoj, 👋</h1>
-            <br>
-            <h2> Jsem UI / UX designer, web / mobile app vývojář. <br> Užívám si vytváření nových a neokoukaných věcí.</h2>
-        </div>
-        <div class="index__right">
-           <!-- <img src="https://www.mulu.cz/wp-content/uploads/2019/05/DSC_0009.jpg"/> -->
-        </div>
+
+<div class="header">
+  <img src="../assets/mikmik-logo.png">
+  <div class="header-block">
+    <div class="header-block__item" (click)="scrollToTarget('cenik')">
+      Ceník
     </div>
-    <div class="index__content">
-
-        <div class="index-about">
-            <!-- <h2>Používám</h2>
-              <div class="index-about__text">
-                  <i class="fab fa-angular"></i> Angular - <i class="fa fa-heart"></i> záležitost <br>
-                  Node.js - ve frameworku nest.js <br>
-                  TypeScript - Typed Superst of Javascript <br>
-                  Sass - stylesheet jazyk na který nedám dopustit <br>
-              </div>
-              <h2>Také Používám</h2>
-              <div class="index-about__text">
-                  React - UI library <br>
-                  Node.js - ve frameworku nest.js <br>
-                  TypeScript - Typed Superst of Javascript <br>
-                  Sass - stylesheet jazyk na který nedám dopustit <br>
-              </div> -->
-        </div>
-
-        <div class="index-about">
-            <app-post-list class="index__posts" [stateIndex]="true"></app-post-list>
-        </div>
-
-        <!--<ngx-slick-carousel class=""
-                            #slickModal="slick-carousel"
-                            [config]="slideConfig"
-                            (init)="slickInit($event)"
-                            (breakpoint)="breakpoint($event)"
-                            (afterChange)="afterChange($event)"
-                            (beforeChange)="beforeChange($event)">
-            <div ngxSlickItem *ngFor="let slide of slides" class="slide">
-                <img src="{{ slide.img }}" alt="" width="100%">
-            </div>
-        </ngx-slick-carousel> -->
-<!--
-        <div class="index-skills">
-            <div class="index-skills__item">test</div>
-        </div>
--->
+    <div class="header-block__item" (click)="scrollToTarget('omne')">
+      O mne
     </div>
+    <div class="header-block__item" (click)="scrollToTarget('odkazy')">
+      Odkazy
+    </div>
+    <div class="header-block__item" (click)="scrollToTarget('kontakt')">
+      Kontakty
+    </div>
+  </div>
+  <div class="header-block">
+    <div class="header-block__button">
+      Chci do autoškoly
+    </div>
+  </div>
 </div>
+
+
+<div class="paralax">
+  <div class="paralax__box">
+    <div class="paralax__item">
+      <i class="fa fa-car" aria-hidden="true"></i>
+      <span>+25 let praxe</span>
+    </div>
+    <div class="paralax__item">
+      <i class="fa fa-credit-card" aria-hidden="true"></i>
+      <span>Přiměřená cena</span>
+    </div>
+    <div class="paralax__item">
+      <i class="far fa-comment-dots" aria-hidden="true"></i>
+      <span>Seriózní a vstřícný přístup</span>
+    </div>
+  </div>
+</div>
+
+<div class="index-block" id="omne">
+  <div class="index-block__title">
+    O mne a vozidlu
+  </div>
+
+  <div class="index-block-about">
+      <img src="../../assets/autoskolamikmik-profil.jpeg">
+      <div class="index-block-about__text">
+        Jmenuji se <b>Radim Mikunda</b> a otevřel jsem si vlastní autoškolu od září 2014.
+        Je mi 48 let a v oboru přípravy nových řidičů nejsem žádným nováčkem.
+         <br><br>Učitelováním v autoškole se zabývám <b>již 20 let.</b>
+         Zdá se mi zbytečné, abych v dnešní elektronické době o sobě psal více, když informace o každém jsou dostupné.
+         <b>Seriózní přístup a vstřícnost je samozřejmostí. Legraci se nebráním :-)</b>
+      </div>
+  </div>
+</div>
+
+<div class="index-block" id="cenik">
+  <div class="index-block__title"> Ceník </div>
+
+  <div class="index-block-price">
+    <div class="index-block-price__item">
+      <div class="index-block-price__title"> Výuka a výcvik Skupina B</div>
+      <div class="index-block-price__price"> cena: 10 500,- </div>
+      <div class="index-block-price__button" (click)="scrollToTarget('kontakt')"> Mám zájem </div>
+    </div>  <div class="index-block-price__item">
+      <div class="index-block-price__title"> Rychlokurz, skupina B </div>
+      <div class="index-block-price__price"> cena: 12 500,-</div>
+      <div class="index-block-price__button" (click)="scrollToTarget('kontakt')"> Mám zájem </div>
+    </div>  <div class="index-block-price__item">
+      <div class="index-block-price__title"> Vrácení řidičského průkazu</div>
+      <div class="index-block-price__price"> cena: 3 000,-</div>
+      <div class="index-block-price__button" (click)="scrollToTarget('kontakt')"> Mám zájem </div>
+    </div>
+    <div class="index-block-price__item">
+      <div class="index-block-price__title"> Kondiční jízdy (<b>45</b> minut)</div>
+      <div class="index-block-price__price"> cena: 400,-</div>
+      <div class="index-block-price__button" (click)="scrollToTarget('kontakt')"> Mám zájem </div>
+    </div>
+    <div class="index-block-price__item">
+      <div class="index-block-price__title"> Kondiční jízdy (<b>90</b> minut)</div>
+      <div class="index-block-price__price"> cena: 700,-</div>
+      <div class="index-block-price__button" (click)="scrollToTarget('kontakt')"> Mám zájem </div>
+    </div>
+    <div class="index-block-price__item">
+      <div class="index-block-price__title"> Školení řidičů referentských vozidel</div>
+      <div class="index-block-price__price"> cena: 200,-</div>
+      <div class="index-block-price__button" (click)="scrollToTarget('kontakt')"> Mám zájem </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="index-block" id="odkazy">
+  <div class="index-block__title">
+    Odkazy
+  </div>
+
+  <div class="index-block-href">
+      <a class="index-block-href__item" href="http://www.vsechny-autoskoly.cz/autoskola_mikmik/hodnoceni/" rel="noopener" target="blank">
+        Recenze autoškoly
+      </a>
+      <a class="index-block-href__item" href="http://etesty.mdcr.cz/" rel="noopener" target="blank">
+        Test pravidel
+      </a>
+      <a class="index-block-href__item" href="http://www.zakruta.cz/autoskola-test-znacek/" rel="noopener" target="blank">
+        Test dopravních značek
+      </a>
+      <a class="index-block-href__item" href="http://www.zakruta.cz/autoskola-test-krizovatek/" rel="noopener" target="blank">
+        Test křižovatek
+      </a>
+  </div>
+
+  <div class="index-block-contact" >
+    <div class="index-block-contact__text">Před začátkem autoškoly budou potřeba tyto dokumenty:</div>
+    <div class="index-block-contact__wrap">
+      <a class="index-block-contact__href" href="http://www.autoskolamikmik.cz/images/zadost_o_prijeti_a_k_vyuce.pdf">žádost o přijetí k výuce a výcviku (obě strany)</a>
+      <a class="index-block-contact__href" href="http://www.autoskolamikmik.cz/images/posudek_o_zdravotni_zpusobilosti.pdf">posudek o zdravní způsobilosti</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="index-block" id="kontakt">
+  <div class="index-block__title">
+    Chcete do autoškoly? Kontaktujte mne!
+  </div>
+
+  <div class="index-frame">
+    <div class="index-frame__item">
+      telefon: <a href="tel:+420604444080"> +420 604 444 080 </a>
+    </div>
+    <div class="index-frame__item">
+      email: <a href="mailto:rmikunda@seznam.cz" > rmikunda@seznam.cz</a>
+    </div>
+  </div>
+
+  <img class="index-block__image" src="../../assets/autoskolamikmik-auto.jpeg">
+
+</div>
+

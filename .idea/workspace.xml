@@ -3,21 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="9daf7d28-0880-4c4f-8f58-b7bef2b0d50f" name="Default" comment="some new changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/favicon/site.webmanifest" beforeDir="false" afterPath="$PROJECT_DIR$/favicon/site.webmanifest" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out-tsc/app/app/app.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/out-tsc/app/app/app.component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out-tsc/app/environments/environment.prod.js" beforeDir="false" afterPath="$PROJECT_DIR$/out-tsc/app/environments/environment.prod.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out-tsc/spec/app/app.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/out-tsc/spec/app/app.component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out-tsc/spec/environments/environment.prod.js" beforeDir="false" afterPath="$PROJECT_DIR$/out-tsc/spec/environments/environment.prod.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-routing.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/index/index.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/index/index.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/index/index.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/index/index.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page/page-single.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page/page-single.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/posts/blog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/posts/blog.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/posts/post-single/post-single.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/posts/post-single/post-single.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/environments/environment.prod.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/environments/environment.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/favicon/site.webmanifest" beforeDir="false" afterPath="$PROJECT_DIR$/src/favicon/site.webmanifest" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -115,7 +105,8 @@
       <workItem from="1569326842188" duration="1238000" />
       <workItem from="1583223668412" duration="10263000" />
       <workItem from="1583486236372" duration="3569000" />
-      <workItem from="1607080802036" duration="1242000" />
+      <workItem from="1607080802036" duration="1471000" />
+      <workItem from="1607241761502" duration="2254000" />
     </task>
     <task id="LOCAL-00001" summary="GitIgnore fix">
       <created>1554750930489</created>
