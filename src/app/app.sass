@@ -12,6 +12,10 @@ $vd-screen-sm-down: "(max-width: #{$vd-screen-sm - 1})"
 $vd-screen-md-down: "(max-width: #{$vd-screen-md - 1})"
 $vd-screen-lg-down: "(max-width: #{$vd-screen-lg - 1})"
 
+body
+  a
+    text-decoration: none
+
 .header
   display: flex
   flex-direction: row
@@ -180,7 +184,7 @@ $vd-screen-lg-down: "(max-width: #{$vd-screen-lg - 1})"
   justify-content: space-between
 
   &__item
-    width: calc((100% / 2) - 40px)
+    width: calc((100% / 2) - 50px)
     border: 1px solid black
     padding: 20px
     margin: 10px 0
@@ -286,11 +290,10 @@ $vd-screen-lg-down: "(max-width: #{$vd-screen-lg - 1})"
   align-items: center
   justify-content: center
   width: 100%
-  padding: 25px
+  padding: 25px 0
   color: white
 
   background-color: #5d9588
-
 
   a
     color: white
