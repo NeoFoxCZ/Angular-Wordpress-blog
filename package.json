@@ -43,7 +43,7 @@
     "ng-simple-slideshow": "^1.2.8",
     "ngx-slick-carousel": "^0.4.4",
     "node": "^11.10.0",
-    "nodemailer": "^5.1.1",
+    "nodemailer": "^6.4.16",
     "rxjs": "^6.4.0",
     "rxjs-compat": "^6.4.0",
     "sass": "^1.17.3",
